@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-image: url("https://th.bing.com/th/id/OIP.54aDRJHlX7jC15ANjLWg-QHaEo?rs=1&pid=ImgDetMain");
+    min-height: 100vh;
+    background-size: cover; 
+    background-position: center;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0,0, 0.1);
+    backdrop-filter: blur(50px);
+    padding: 25px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    height: 100px;
+}
+.logo{
+    font-size: 2.4rem;
+text-decoration: none;
+color: black;
+font-weight: 700;
+}
+.icons{
+    font-size: 2.8rem;
+    color: blue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    display: none;
+}
+.navbar a{
+    font-size: 1.15rem;
+    color: blue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+.contents{
+    margin-top: 100px;
+}
+p{
+    font-size: 1rem;
+    line-height: 1.23;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.flex-items{
+    width: 300px;
+border: solid 1px;
+    margin: 10px;
+}
+img{
+    width: 100%;
+}
+@media(max-width:768px){
+    .icons{
+     display: flex;
+    }
+    #check:checked~.icons #menu-icons{
+display: none;
+    }
+
+.icons #close-icons{
+ display: none;
+}
+#check:checked~.icons #close-icons
+{
+ display: block;
+}
+.navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    height: 0px;
+    display: none;
+   }
+   #check:checked~.navbar{
+    display: block;
+    height: 15rem;
+   }
+   .navbar a{
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.5rem;
+    text-align: center;
+
+}
+p{
+    font-size: 2rem ;
+    line-height: 1.5;
+}
+.flex-container{
+    flex-wrap: wrap;
+}
+}
+

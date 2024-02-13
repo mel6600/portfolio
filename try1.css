@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+}
+
+.container{
+    height: 1000px;
+    width: 100%;
+    background-color: aquamarine;
+
+}
+.header{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-color: bisque;
+
+
+   
+}
+
+.header img{
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+    height: 50%;
+
+
+}
+
+
+
+
+

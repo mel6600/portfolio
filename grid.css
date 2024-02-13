@@ -1,0 +1,15 @@
+.content{
+    width: 50%;
+display: flex;
+justify-content: space-between;
+
+position: relative;
+ 
+}
+.base-bar{
+    width: 100%;
+    background-color: black;
+    height: 10px;
+    position: absolute
+    
+}
